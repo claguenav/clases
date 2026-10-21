@@ -1,0 +1,55 @@
+/**
+ * 
+ */
+package datos.ejercicios;
+
+/**
+ * 
+ */
+public class ticketDeporte {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		/*
+		 * // Programa "malo" (valores hardcodeados, sin variables ni constantes)
+		 * System.out.println("=== TICKET ===");
+		 * System.out.println("Producto: Zapatillas Running");
+		 * System.out.println("Unidades: " + 2); System.out.println("Precio unidad: " +
+		 * 74.95); System.out.println("IVA: " + 21 + "%"); // Cálculo directo sin
+		 * significado semántico System.out.println("Total: " + (2 * 74.95 * 1.21));
+		 */
+		
+		
+		final String nombreApp = "Ticket de compra";
+		final String versionApp = "v1.67";
+		
+		String nombre = "Zapatillas Running";
+		int boughtUnits = 3; // int porque representa una unidad entera
+		float price = 74.95f; // float porque es un numero con decimales
+		char categoria = 'R'; // char porque se trata de un unico caracter
+		boolean esSocio = true; // boolean porque es una variable de Si / No
+		double identificadorTicket = 2.000_145_876f; // double porque es decimal y asi tengo mas memoria
+		int codigoTienda = 25; // unidad entera
+		int calificacion = 3; // unidad entera
+		final float IVA = 21.5f; // final porque el IVA siempre tiene el mismo porcentaje (21%)
+		float descuento = 0.10f; // float porque es decimal
+		int subtotal = 0;
+		
+		subtotal = boughtUnits * price;
+		IVA = subtotal * IVA;
+		System.out.println(subtotal);   
+		
+		
+		
+		
+		
+		
+				
+		
+
+	}
+
+}

@@ -1,0 +1,104 @@
+/**
+ * 
+ */
+package datos.ejercicios;
+
+/**
+ * 
+ */
+public class Identif {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		int _alpha; //OK
+		
+		/*FLOAT 1_de_muchos, 
+		 * No se puede empezar con número
+		 * 
+		 * Hay que hacer que sea mas legible asiq poner las mayusculas para separar
+		 * las palabras
+		 */
+		float UnoDeMuchos;
+		float uno_de_muchos;
+		
+		int maxValor; //OK
+		
+		int cuantos; // OK 
+		
+		//int "dado", No puedes poner la variable entre comillas
+		int dado;
+		
+		int Nbytes; // OK
+		
+		// int p i nk.panter; No pueden utilizarse espacios en blanco o puntos para separar palabras
+		
+		int p_i_nk_panter;
+		
+		// int; No tiene ninguna variable declarada
+		int variable;
+		
+		// int qué_dices?; El caracter ? no vale, ademas no se recomienda poner tildes
+		
+		int qué_dices;
+		
+		int Número; // OK aunque tiene tilde
+		
+		// int cadena 2; Hay que poner un = entre el nombre de la variable y la variable
+		
+		int cadena = 2;
+		
+		// int Cañón; No se recomienda utilizar acentos o ñ
+		
+		int canon;
+		
+		// int café; No se recomienda usar acentos
+		
+		int cafe;
+		
+		// int Mesa-3; Para separar se utiliza _
+		
+		int Mesa_3;
+		
+		// int Return; Return es una palabra reservada
+		
+		int volver;
+		
+		// int While; While es una palabra reservada  
+		
+		int mientras;
+		
+		// int __if; if es una palabra reservada
+		
+		int si;
+		
+		
+		// int Bloque#4; No esta permitido el #
+		
+		int Bloque_4;
+		
+		
+		// int c o s a;  No ser permiten espacios en blanco
+		
+		int c_o_s_a;
+		
+		int _CaPrIcHoSo_; //OK
+		
+		// int 8ªRoca; Caracter no permitido
+		
+		int octavaRoca;
+		
+		// int 3d2; No se permite empezar la variable con un numero
+		
+		int tresd2;
+		
+		// int Hoja3/5; Caracter no permitido
+		
+		int Hoja3_5;
+		
+
+	}
+
+}

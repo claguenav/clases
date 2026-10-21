@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package datos.ejercicios;
+
+/**
+ * 
+ */
+public class ej2 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		String nombre = "Clara";
+		int edad = 23;
+		float altura = 1.63f;
+		char inicial = 'C';
+		boolean esMayorDeEdad = true;
+		final float PI = 13.1416f;
+		
+		System.out.println(nombre + " tiene " + edad + " años " + " y su nombre empieza por " + inicial + " ademas es mayor de edad? " + esMayorDeEdad + "mide " + altura + ", y el numero pi es: " + PI + "...!!! :D" );
+		
+		
+
+	}
+
+}

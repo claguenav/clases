@@ -1,0 +1,40 @@
+/**
+ * 
+ */
+package datos.ejercicios;
+
+/**
+ * 
+ */
+public class FichaRegistro {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		String nombreUsuario = "Clara";
+		char inicialUsuario = 'C';
+		boolean aceptaTerminos = false;
+		int edadUsuario = 23;
+		float pesoUsuario = 72.4f;
+		final String SISTEMA = "Registro v1.0";
+
+		aceptaTerminos = true;
+
+		System.out.println("=== FICHA DE REGISTRO ===");
+		System.out.println("Sistema: " + SISTEMA);
+		System.out.println("Usuario: " + nombreUsuario + " (" + inicialUsuario + ")");
+		System.out.println("Edad: " + edadUsuario);
+		System.out.println("Peso: " + pesoUsuario);
+		System.out.println("¿Ha aceptado los términos? " + aceptaTerminos);
+		System.out.println("=========================");
+		System.out.println("   _   ");
+		System.out.println(" _(\")_ ");
+		System.out.println("(_ . _)");
+		System.out.println(" / : \\ ");
+		System.out.println("(_/ \\_)");
+
+	}
+
+}

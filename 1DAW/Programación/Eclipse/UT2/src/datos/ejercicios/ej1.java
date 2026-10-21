@@ -1,0 +1,36 @@
+/**
+ * 
+ */
+package datos.ejercicios;
+
+/**
+ * 
+ */
+public class ej1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+
+			int num1 = 2;
+			int num2 = 3;
+			
+			System.out.println("El valor de num1 es: " + num1 );
+			System.out.println("El valor de num 2 es: " + num2);
+			// otra forma de hacerlo
+			System.out.println("Mis números son: " + num1 + " y " + num2);
+		
+			float num3 = 6.7f;
+			float num4 = 3.3f;
+			
+// poner final delante es para que sea una constante, o sea que la variable jamas va a cambiar, ademas el nombre se debe de poner en MAYUSCULA
+			
+			final float PI = 3.1415f; 
+			
+			System.out.println("El resultado es: " + num3 * num4 * PI);
+		
+	}
+
+}

@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package datos.ejercicios;
+
+/**
+ * 
+ */
+public class TiposCorrectos {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		
+		int numeroPersonas = "25";
+		float temperatura = 37.5;
+		char letraDni = "X";
+		boolean esValido = "true";
+		
+		// String saludo = 'Hola'; No debe ir entre comillas el hola
+		String saludo = Hola;
+		
+		
+		
+		
+
+	}
+
+}

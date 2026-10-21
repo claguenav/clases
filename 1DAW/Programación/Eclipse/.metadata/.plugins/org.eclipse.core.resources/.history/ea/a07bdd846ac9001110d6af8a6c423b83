@@ -1,0 +1,42 @@
+/**
+ * 
+ */
+package UT2;
+
+/**
+ * 
+ */
+public class GuerreroClara_Reto1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		// constantes
+		final String APPNAME = "Ticket Farmacia";
+		final float VERSION = 1.0f;
+		
+		// variables
+		
+		String producto = "Ibuprofeno";
+		int cantidadcompra = 3;
+		
+		
+		//cambiar float  - 
+		float unitPrice = 19.99f;
+		
+		char categoria = 'A';
+		boolean esPremium = true;
+		
+		long id = 3000023999;
+		
+		byte codigoAlmacen = 12;
+		short calificacion = 9;
+		
+		System.out.println(calificacion);
+		
+		
+	}
+
+}

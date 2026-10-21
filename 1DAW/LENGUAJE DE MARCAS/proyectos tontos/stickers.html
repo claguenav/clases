@@ -1,0 +1,173 @@
+<!--  Este codigo esta vibecodeado -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recortador de Stickers para Telegram</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #95b3f3;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        #pasteArea {
+            border: 2px dashed #3f4cfd;
+            border-radius: 8px;
+            padding: 40px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        #pasteArea:hover {
+            background: #f8f9fa;
+        }
+        .canvas-container {
+            display: none;
+            margin: 20px 0;
+            overflow: auto;
+        }
+        canvas {
+            border: 1px solid #ddd;
+            max-width: 100%;
+        }
+        button {
+            background: #2481cc; /* Azul Telegram */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            display: none;
+            margin: 10px auto;
+        }
+        button:hover {
+            background: #1d69a6;
+        }
+        #status {
+            margin-top: 15px;
+            color: #28a745;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2> Creador de Stickers para Telegram</h2>
+        <p>1. Pega tu imagen aquí (Ctrl+V)</p>
+
+        <div id="pasteArea">Haz clic aquí y presiona <b>Ctrl + V</b> para pegar tu imagen</div>
+
+        <div class="canvas-container" id="canvasContainer">
+            <p>2. Previsualización (Escalada y centrada a 512x512 transparentes)</p>
+            <canvas id="previewCanvas" width="512" height="512"></canvas>
+        </div>
+
+        <button id="copyBtn">Copiar Imagen Lista para Telegram</button>
+        <button id="downloadBtn">Descargar como PNG</button>
+        <div id="status"></div>
+    </div>
+
+    <script>
+        const pasteArea = document.getElementById('pasteArea');
+        const canvas = document.getElementById('previewCanvas');
+        const ctx = canvas.getContext('2d');
+        const canvasContainer = document.getElementById('canvasContainer');
+        const copyBtn = document.getElementById('copyBtn');
+        const downloadBtn = document.getElementById('downloadBtn');
+        const statusDiv = document.getElementById('status');
+
+        // Escuchar el evento de pegar en todo el documento o en el área
+        window.addEventListener('paste', handlePaste);
+
+        function handlePaste(e) {
+            const items = e.clipboardData.items;
+            for (let i = 0; i < items.length; i++) {
+                if (items[i].type.indexOf('image') !== -1) {
+                    const blob = items[i].getAsFile();
+                    const img = new Image();
+                    const url = URL.createObjectURL(blob);
+
+                    img.onload = () => {
+                        processImageForTelegram(img);
+                        URL.revokeObjectURL(url);
+                    };
+                    img.src = url;
+                    break;
+                }
+            }
+        }
+
+        function processImageForTelegram(img) {
+            // Limpiar canvas con fondo transparente
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Calcular proporciones para encajar en 512x512
+            const maxDimension = 512;
+            let width = img.width;
+            let height = img.height;
+
+            if (width > height) {
+                if (width > maxDimension) {
+                    height = Math.round(height * (maxDimension / width));
+                    width = maxDimension;
+                }
+            } else {
+                if (height > maxDimension) {
+                    width = Math.round(width * (maxDimension / height));
+                    height = maxDimension;
+                }
+            }
+
+            // Calcular posición para centrar en el canvas de 512x512
+            const x = (canvas.width - width) / 2;
+            const y = (canvas.height - height) / 2;
+
+            // Dibujar imagen escalada
+            ctx.drawImage(img, x, y, width, height);
+
+            // Mostrar UI
+            canvasContainer.style.display = 'block';
+            copyBtn.style.display = 'inline-block';
+            downloadBtn.style.display = 'inline-block';
+            statusDiv.textContent = 'Imagen procesada. ¡Lista para copiar!';
+            pasteArea.style.display = 'none';
+        }
+
+        // Función para copiar al portapapeles
+        copyBtn.addEventListener('click', async () => {
+            try {
+                canvas.toBlob(async (blob) => {
+                    const item = new ClipboardItem({ 'image/png': blob });
+                    await navigator.clipboard.write([item]);
+                    statusDiv.textContent = '✅ ¡Copiado al portapapeles! Ve al bot de Telegram y dale a Pegar (Ctrl+V)';
+                }, 'image/png');
+            } catch (err) {
+                statusDiv.textContent = '❌ Error al copiar. Tu navegador podría no soportar esta función.';
+                statusDiv.style.color = 'red';
+                console.error(err);
+            }
+        });
+
+        // Función para descargar por si el copiado falla en algún navegador
+        downloadBtn.addEventListener('click', () => {
+            const link = document.createElement('a');
+            link.download = 'sticker_telegram.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        });
+    </script>
+</body>
+</html>

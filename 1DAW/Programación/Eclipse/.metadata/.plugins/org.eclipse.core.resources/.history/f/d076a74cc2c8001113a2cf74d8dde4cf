@@ -1,0 +1,44 @@
+/**
+ * 
+ */
+
+/**
+ * 
+ */
+public class TicketSuper {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		final String SUPER = "SAN RAMON SUPERMERCADOS";
+		final String FACTURA = "FACTURA SIMPLIFICADA";
+		final String FACT = "TT124-428249";
+		
+		String fecha = "05/10/2026";
+		String hora = "9:19 am";
+		String dependiente = "ANA MARIA GRAU";
+		double ot = 4746639267887802671492f;
+		byte nArticulos = 7;
+		// articulos compra
+		float agua = 1.90f;
+		float bimbo = 2.31f;
+		float bolsa = 015f;
+		float oreo = 3.50f;
+		float don_simon = 0.96f;
+		float zumo_manzana = 1.39f;
+		float zumo_naranja = 1.36f;
+		
+		// dinero
+		
+		float efectivo = 20.00f;
+		float total = agua + bimbo + bolsa + oreo + don_simon + zumo_naranja + zumo_manzana;
+		
+	//	float cambio = efectivo - total;
+				
+		System.out.println(total);
+		
+	}
+
+}

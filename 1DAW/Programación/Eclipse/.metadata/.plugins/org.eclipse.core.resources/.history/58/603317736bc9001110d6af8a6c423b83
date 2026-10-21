@@ -1,0 +1,64 @@
+/**
+ * 
+ */
+package UT2;
+
+/**
+ * 
+ */
+public class GuerreroClara_Reto1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		// constantes
+		final String APPNAME = "Ticket Farmacia";
+		final float VERSION = 1.0f;
+		
+		// variables
+		
+		String producto = "Ibuprofeno";
+		int cantidadcompra = 3;
+		
+		
+		//cambiar float  - 
+		float unitPrice = 19.99f;
+		
+		char categoria = 'A';
+		boolean esPremium = true;
+		
+	//	long id = 3000023999;
+		
+		byte codigoAlmacen = 12;
+		short calificacion = 9;
+		
+		// dinero
+		
+		float iva = 0.21f;
+		float subtotal = 0f;
+		float descuento = 0.10f;
+		float ivaSubtotal = 0f;
+		float total = 0f;
+		
+		subtotal = cantidadcompra * unitPrice;
+		
+		descuento = subtotal * descuento;
+		
+		subtotal -= descuento;
+		
+		ivaSubtotal = subtotal * iva;
+		
+		total = subtotal + ivaSubtotal;
+		
+		System.out.println(total);
+		System.out.println(subtotal);
+		System.out.println(ivaSubtotal + .2f);
+		
+		
+		
+		
+	}
+
+}

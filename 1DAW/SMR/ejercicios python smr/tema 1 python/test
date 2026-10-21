@@ -1,0 +1,4 @@
+nombreModulo = input ("Que tal amiguito")
+print ("Bienvenidos al módulo de", nombreModulo)
+
+ 

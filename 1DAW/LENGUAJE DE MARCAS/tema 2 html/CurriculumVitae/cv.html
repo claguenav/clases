@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    th,
+    td {
+      text-align: center;
+      background-color: rgb(227, 241, 228);
+      border: 3px solid #3e6d28;
+      padding: 0.5rem;
+
+
+    }
+
+    img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 300px;
+  background-color: #218855;
+  padding: 5px;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+p {
+  text-align: justify;
+}
+
+
+  </style>
+  <!--  ESTO LO HE HECHO CON W3SCHOOLS -->
+</head>
+
+<body>
+  <div class="center">
+  <h1 style="text-align: center; color:#08351e">Curriculum vitae</h1>
+
+  <img src="../CurriculumVitae/Imagenes/piccolo.jpg" alt="Retrato de Piccolo" width="150">
+  <section style="text-align: center; color:#08351e">
+
+    <a href="#infop">Info Personal</a>
+    <a href="#Estudios">Estudios</a>
+    <a href="#experiencia">Experiencia Laboral</a>
+    <a href="#idiomas">Idiomas/Tecnologias</a>
+    <a href="#contacto">Contacto</a>
+
+  </section>
+  <section id="infop">
+    <h3 style="text-align: center; color:#08351e">Info personal</h3>
+    <p>Soy Piccolo, especialista en DevSecOps, automatización de seguridad en pipelines CI/CD y cumplimiento normativo de Protección de Datos (GDPR/LOPDGDD). Con una trayectoria técnica enfocada en la integración nativa de controles de seguridad en el ciclo de vida del software, me especializo en la orquestación de contenedores seguros, gestión de vulnerabilidades y en garantizar que la privacidad y el cifrado formen parte de cada despliegue de infraestructura crítica. Mi objetivo es asegurar que la velocidad del desarrollo ágil nunca comprometa la robustez ni la legalidad de los datos.</p>
+  </section>
+
+  <section id="estudios">
+    <h3 style="text-align: center; color:#08351e">Estudios</h3>
+    <table>
+      <tr>
+        <th >Título</th>
+        <th>Institución</th>
+        <th>Año</th>
+      </tr>
+      <tr>
+        <td>Máster en Ingeniería de Sistemas y Computación</td>
+        <td>Universidad de Murcia</td>
+        <td>2018</td>
+      </tr>
+      <tr>
+        <td>Grado en Ingeniería Informática</td>
+        <td>Universidad Politécnica de Cartagena</td>
+        <td>2015</td>
+      </tr>
+    </table>
+  </section>
+  <section id="experiencia">
+    <h3 style="text-align: center; color:#08351e">Experiencia Laboral</h3>
+    <table>
+      <tr>
+        <th>Fecha</th>
+        <th>Institución</th>
+        <th>Localidad</th>
+        <th>Provincia</th>
+        <th>Puesto</th>
+      </tr>
+      <tr>
+        <td>sept 2020 - actualidad</td>
+        <td>Indra Sistemas</td>
+        <td>Murcia</td>
+        <td>Murcia</td>
+        <td>Director de DevSecOps y Protección de Datos</td>
+      </tr>
+      <tr>
+        <td>sept 2017 - sept 2020</td>
+        <td>Soltec</td>
+        <td>Cehegín</td>
+        <td>Murcia</td>
+        <td>Lead DevSecOps Engineer</td>
+      </tr>
+      <tr>
+        <td>sept 2011 - ago 2017</td>
+        <td>Grupo Cosentino</td>
+        <td>Cantoria</td>
+        <td>Almería</td>
+        <td>Ingeniero de Seguridad Cloud y CI/CD</td>
+      </tr>
+      <tr>
+        <td>sept 2010 - ago 2011</td>
+        <td>Cajamar Innova</td>
+        <td>El Ejido</td>
+        <td>Almería</td>
+        <td>Especialista en Automatización y Seguridad</td>
+      </tr>
+      <tr>
+        <td>sept 2008 - ago 2009</td>
+        <td>Deoleo</td>
+        <td>Hinojosa del Duque</td>
+        <td>Córdoba</td>
+        <td>Administrador de Sistemas y Cumplimiento</td>
+      </tr>
+      <tr>
+        <td>sept 2006 - ago 2008</td>
+        <td>Cazorla Software Labs</td>
+        <td>Cazorla</td>
+        <td>Jaén</td>
+        <td>Desarrollador Backend Junior</td>
+      </tr>
+    </table>
+  </section>
+  <section id="idiomas">
+    <h3 style="text-align: center; color:#08351e">Idiomas/Tecnologías</h3>
+    <table>
+      <tr>
+      <th>Idioma</th>
+      <th>Nivel</th>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Ingles</td>
+        <td>C2</td>
+      </tr>
+      <tr>
+        <td>Catalan</td>
+        <td>B2</td>
+      </tr>
+    </table>
+  </section>
+  <section id="contacto" style="text-align: center; color:#08351e">
+    <h3>Contacto</h3>
+    <form action="/" method="get">
+
+      <label for="email">Deja tu email:</label>
+      <input type="email" name="email" placeholder="piccolo@email.com" required>
+      <button type="submit">Contactar</button>
+    </form>
+  </section>
+  <section style="color: green;">
+    <p><i>@2026 - powered by Clara Guerrero</i></p>
+  </section>
+</div>
+
+</body>
+</html>

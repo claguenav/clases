@@ -1,0 +1,100 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="B3g7UN6kD221QNHKjPtD">
+    <mxGraphModel dx="1414" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;strokeWidth=6;" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;&lt;b&gt;Primera receta&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b style=&quot;&quot;&gt;Salida&lt;/b&gt;: Limonada&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Datos&lt;/b&gt;: Limón, vasos, azucar, agua, hielo.&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="332" x="248" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;1-&lt;/font&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt; Lavar un limon&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;2- Cortar el limon con cuchillo x la mitad&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;3 - exprimir limon vaso&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;4 - añadir agua fria 1 vaso&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;5 - añadir azucar 50g&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;6 - remover&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="310" x="570" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-15" edge="1" parent="1" source="KNbFAJEU-tTcO7yo2T-d-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="KNbFAJEU-tTcO7yo2T-d-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#EA6B66;fontStyle=1" value="Inicio" vertex="1">
+          <mxGeometry height="60" width="60" x="383" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#EA6B66;fontStyle=1" value="Final" vertex="1">
+          <mxGeometry height="60" width="60" x="380.5" y="1420" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-23" edge="1" parent="1" source="KNbFAJEU-tTcO7yo2T-d-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="KNbFAJEU-tTcO7yo2T-d-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-12" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;fillColor=#7EA6E0;" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b style=&quot;text-align: left;&quot;&gt;Datos&lt;/b&gt;&lt;span style=&quot;text-align: left;&quot;&gt;: Limón, vasos, azucar, agua, hielo.&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-30" edge="1" parent="1" source="KNbFAJEU-tTcO7yo2T-d-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="KNbFAJEU-tTcO7yo2T-d-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-13" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;fillColor=#7EA6E0;" value="Limonada" vertex="1">
+          <mxGeometry height="60" width="120" x="349.5" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-16" edge="1" parent="1" source="KNbFAJEU-tTcO7yo2T-d-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;" target="KNbFAJEU-tTcO7yo2T-d-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-24" edge="1" parent="1" source="KNbFAJEU-tTcO7yo2T-d-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="KNbFAJEU-tTcO7yo2T-d-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFD966;" value="LimonLimpio = Lavar limón" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-25" edge="1" parent="1" source="KNbFAJEU-tTcO7yo2T-d-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="KNbFAJEU-tTcO7yo2T-d-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFD966;" value="LimonCortado = limon/2" vertex="1">
+          <mxGeometry height="60" width="120" x="353" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-26" edge="1" parent="1" source="KNbFAJEU-tTcO7yo2T-d-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="KNbFAJEU-tTcO7yo2T-d-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFD966;" value="Vaso = Exprimir limón" vertex="1">
+          <mxGeometry height="60" width="120" x="353" y="572" as="geometry" />
+        </mxCell>
+        <mxCell id="ms4hx7k7eD6iE47JHA3U-3" edge="1" parent="1" source="KNbFAJEU-tTcO7yo2T-d-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ms4hx7k7eD6iE47JHA3U-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFD966;" value="Vaso = vaso + VasoAgua" vertex="1">
+          <mxGeometry height="60" width="120" x="353" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-28" edge="1" parent="1" source="KNbFAJEU-tTcO7yo2T-d-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="KNbFAJEU-tTcO7yo2T-d-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFD966;" value="vaso = vaso + azucar50g" vertex="1">
+          <mxGeometry height="60" width="120" x="190" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-29" edge="1" parent="1" source="KNbFAJEU-tTcO7yo2T-d-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="KNbFAJEU-tTcO7yo2T-d-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KNbFAJEU-tTcO7yo2T-d-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFD966;" value="Limonada = removerVaso" vertex="1">
+          <mxGeometry height="60" width="120" x="350.5" y="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="ms4hx7k7eD6iE47JHA3U-5" edge="1" parent="1" source="ms4hx7k7eD6iE47JHA3U-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ms4hx7k7eD6iE47JHA3U-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ms4hx7k7eD6iE47JHA3U-1" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;fillColor=#7EA6E0;" value="Escribir ¿Añado azúcar?" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="763" as="geometry" />
+        </mxCell>
+        <mxCell id="ms4hx7k7eD6iE47JHA3U-20" edge="1" parent="1" source="ms4hx7k7eD6iE47JHA3U-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ms4hx7k7eD6iE47JHA3U-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ms4hx7k7eD6iE47JHA3U-2" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;fillColor=#7EA6E0;" value="Leer: respuesta" vertex="1">
+          <mxGeometry height="60" width="120" x="352" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="ms4hx7k7eD6iE47JHA3U-11" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=20;fillColor=#D5E8D4;" value="Recibe información del usuario" vertex="1">
+          <mxGeometry height="77" width="90" x="500" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="ms4hx7k7eD6iE47JHA3U-18" edge="1" parent="1" source="ms4hx7k7eD6iE47JHA3U-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="KNbFAJEU-tTcO7yo2T-d-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ms4hx7k7eD6iE47JHA3U-21" edge="1" parent="1" source="ms4hx7k7eD6iE47JHA3U-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="KNbFAJEU-tTcO7yo2T-d-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ms4hx7k7eD6iE47JHA3U-17" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#CDA2BE;" value="RespuestaAzucar" vertex="1">
+          <mxGeometry height="100" width="128" x="346" y="950" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

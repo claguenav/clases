@@ -1,0 +1,44 @@
+/**
+ * 
+ */
+package datos.ejercicios;
+
+/**
+ * 
+ */
+public class ej3 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		// int numeroPersonas = "25"; PARA PONER UN NUMERO ENTERO NO HAY QUE PONER COMILLAS
+		
+		int numeroPersonas = 25;
+
+		// float temperatura = 37.5; FALTA LA F AL FINAL DEL NUMERO DECIMAL
+
+		float temperatura = 37.5f;
+
+		// char letraDni = "X"; DEBE IR ENTRE UNA COMILLA NO DOBLES
+
+		char letraDni = 'X';
+
+		// boolean esValido = "true"; SOBRAN LAS COMILLAS
+
+		boolean esValido = true;
+
+		// String saludo = 'Hola'; DEBE IR ENTRE COMILLAS DOBLES
+
+		String saludo = "Hola" ;
+
+		
+		System.out.println(saludo);
+		System.out.println(numeroPersonas);
+		System.out.println(temperatura);
+		System.out.println(letraDni);
+		System.out.println(esValido);
+	}
+
+}

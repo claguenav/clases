@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package datos.ejercicios;
+
+/**
+ * 
+ */
+public class ActualizacionDatos {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		final int PUNTUACION_MAXIMA = 100;
+		int puntuacion = 0;
+		System.out.println("Puntuación inicial: " + puntuacion);
+		puntuacion += 10;
+		System.out.println("Nueva puntuacion: " + puntuacion );
+
+	}
+
+}

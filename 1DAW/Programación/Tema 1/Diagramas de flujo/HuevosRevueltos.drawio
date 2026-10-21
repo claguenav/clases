@@ -1,0 +1,94 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="b7oFMiS4KHLhQdnteMNx">
+    <mxGraphModel dx="1414" dy="2010" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-45" edge="1" parent="1" source="EeIC48vFRFbvxsx1OlB3-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="EeIC48vFRFbvxsx1OlB3-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;" value="INICIO" vertex="1">
+          <mxGeometry height="80" width="80" x="350" y="-50" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;" value="FIN" vertex="1">
+          <mxGeometry height="80" width="80" x="350" y="1310" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-33" edge="1" parent="1" source="EeIC48vFRFbvxsx1OlB3-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="EeIC48vFRFbvxsx1OlB3-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-17" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Datos:huevos, sal, Fuego, sartén, queso, bowl, plato" vertex="1">
+          <mxGeometry height="60" width="120" x="330" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-26" edge="1" parent="1" source="EeIC48vFRFbvxsx1OlB3-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="EeIC48vFRFbvxsx1OlB3-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Huevos = batir huevos&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="330" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-27" edge="1" parent="1" source="EeIC48vFRFbvxsx1OlB3-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="EeIC48vFRFbvxsx1OlB3-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-21" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Escribir: ¿Quiere queso?" vertex="1">
+          <mxGeometry height="60" width="120" x="330" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-28" edge="1" parent="1" source="EeIC48vFRFbvxsx1OlB3-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="EeIC48vFRFbvxsx1OlB3-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-29" edge="1" parent="1" source="EeIC48vFRFbvxsx1OlB3-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="EeIC48vFRFbvxsx1OlB3-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-22" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Leer: Respuesta" vertex="1">
+          <mxGeometry height="80" width="80" x="350" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-44" edge="1" parent="1" source="EeIC48vFRFbvxsx1OlB3-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="EeIC48vFRFbvxsx1OlB3-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Huevos = huevos + queso" vertex="1">
+          <mxGeometry height="60" width="120" x="190" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-35" edge="1" parent="1" source="EeIC48vFRFbvxsx1OlB3-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="EeIC48vFRFbvxsx1OlB3-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Huevos = huevos + sal" vertex="1">
+          <mxGeometry height="60" width="120" x="330" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-36" edge="1" parent="1" source="EeIC48vFRFbvxsx1OlB3-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="EeIC48vFRFbvxsx1OlB3-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Huevos = RemoverHuevos" vertex="1">
+          <mxGeometry height="60" width="120" x="330" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-38" edge="1" parent="1" source="EeIC48vFRFbvxsx1OlB3-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="EeIC48vFRFbvxsx1OlB3-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fuego = EncenderFuego&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="330" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-34" edge="1" parent="1" source="EeIC48vFRFbvxsx1OlB3-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="EeIC48vFRFbvxsx1OlB3-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Huevos = bowl + huevos" vertex="1">
+          <mxGeometry height="60" width="120" x="330" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-41" edge="1" parent="1" source="EeIC48vFRFbvxsx1OlB3-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="EeIC48vFRFbvxsx1OlB3-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="HuevosFin = huevos + fuego" vertex="1">
+          <mxGeometry height="60" width="120" x="330" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-42" edge="1" parent="1" source="EeIC48vFRFbvxsx1OlB3-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="EeIC48vFRFbvxsx1OlB3-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="HuevosFin = plato + HuevosFin" vertex="1">
+          <mxGeometry height="60" width="120" x="330" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-43" edge="1" parent="1" source="EeIC48vFRFbvxsx1OlB3-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="EeIC48vFRFbvxsx1OlB3-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EeIC48vFRFbvxsx1OlB3-40" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="HuevosFin" vertex="1">
+          <mxGeometry height="60" width="120" x="330" y="1220" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
