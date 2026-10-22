@@ -1,1 +1,4 @@
-INDEX VERSION 1.134+E:\clases root\DAW\1DAW\Programación\Eclipse\.metadata\.plugins\org.eclipse.jdt.core
+INDEX VERSION 1.134+E:\Clases\1DAW\Programación\Eclipse\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+237776239.index
+3706210957.index
