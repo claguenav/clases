@@ -1,12 +1,4 @@
 /**
- * 
- */
-package datos.ejercicios;
-
-import java.util.Scanner;
-import java.lang.Math;
-
-/**
  * Diseñar una aplicación que calcule la longitud y el área de una
  * circunferencia. Para ello, el usuario debe introducir el radio (que puede
  * contener decimales). 
@@ -14,6 +6,13 @@ import java.lang.Math;
  * Longitud = 2π * radio; 
  * 
  * Área = π* radio2
+ */
+package datos.ejercicios;
+
+import java.util.Scanner;
+import java.lang.Math;
+
+/*
  */
 public class IO_Ejbasicos4 {
 

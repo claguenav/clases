@@ -1,15 +1,15 @@
 /**
+ *  a. Pedir al usuario su edad y mostrar la que tendrá el próximo año.
  * 
+ *  b. Pedir a la usuaria el año actual y el de su nacimiento. Debe calcular su
+ * edad, suponiendo que en el año en curso la usuaria ya ha cumplido años
  */
 package datos.ejercicios;
 
 import java.util.Scanner;
 
 /**
- * a. Pedir al usuario su edad y mostrar la que tendrá el próximo año.
  * 
- * b. Pedir a la usuaria el año actual y el de su nacimiento. Debe calcular su
- * edad, suponiendo que en el año en curso la usuaria ya ha cumplido años
  */
 public class IO_Ejbasicos2 {
 
