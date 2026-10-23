@@ -34,7 +34,7 @@ public class IO_Ejbasicos13 {
 		sc.nextLine(); // Limpiar el buffer
 		
 		
-		double y = (a * x * 2) + (b * x ) + c;
+		double y = (a * Math.pow(a, 2)) + (b * x) + c;
 		
 		
 		// CALCULO USANDO MATH

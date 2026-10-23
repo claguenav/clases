@@ -1817,3 +1817,6 @@
 {"logTime": "1023/144202", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
 {"logTime": "1023/145148", "level": "INFO", "message": "Preference changed: name=profile.observed_session_time, new_value=[object], source=unknown"}
 {"logTime": "1023/145158", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1023/152647", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.media_engagement, new_value=[object], source=unknown"}
+{"logTime": "1023/152647", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=2, source=unknown"}
+{"logTime": "1023/152647", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=3, source=unknown"}
