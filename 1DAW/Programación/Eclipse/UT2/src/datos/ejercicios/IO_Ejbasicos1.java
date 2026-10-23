@@ -30,6 +30,7 @@ public class IO_Ejbasicos1 {
 		String nombre = sc.next();
 		System.out.println("Tu nombre es: " + nombre);
 		sc.nextLine(); // Limpiar el buffer
+		sc.close();
 
 	}
 

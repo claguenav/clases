@@ -22,7 +22,8 @@ public class IO_Ejbasicos10 {
 		
 		Scanner sc = new Scanner(System.in); // ESTO SE PONE SOLO 1 VEZ
 		System.out.println("Dame un número por favor: ");
-		
+		sc.close();
+
 		
 
 	}

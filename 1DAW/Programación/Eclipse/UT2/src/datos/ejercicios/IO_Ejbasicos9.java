@@ -30,6 +30,8 @@ public class IO_Ejbasicos9 {
 		// calculo con MATH
 		
 		System.out.println("El valor entero mas proximo usando math es: " + Math.round(numero));		
+		sc.close();
+
 		
 
 	}

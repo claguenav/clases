@@ -36,6 +36,7 @@ public class IO_Ejbasicos2 {
 		año = año - nacimiento;
 
 		System.out.println("Actualmente tienes: " + año + " años!!");
+		sc.close();
 
 	}
 

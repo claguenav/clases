@@ -30,7 +30,8 @@ public class IO_Ejbasicos4 {
 		System.out.printf("La longitud es: %.2f%n", longitud);
 		System.out.println("La longitud redondeada al entero mas proximo " + Math.ceil(longitud));
 		System.out.println("La longitud: " + Math.round(longitud));
-		
+		sc.close();
+
 
 	}
 

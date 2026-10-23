@@ -60,7 +60,8 @@ public class IO_Ejbasicos5 {
 		System.out.println("El total de perfiles vendidos en todo el año: " + totalPer + " piezas" );
 		System.out.println("--------------------------------------------------");
 		System.out.printf("El beneficio total del año es:  %.2f€", total); // asi no se pone feo el euro %.2f%n con esto se pone feo 
-		
+		sc.close();
+
 		/*
 		 * IMPORTANTE PONER printf !!! y %.2f%n para que salga en decimal
 		 * para unirl con una variable es con una

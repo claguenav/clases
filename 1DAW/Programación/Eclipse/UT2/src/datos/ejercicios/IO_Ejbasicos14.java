@@ -31,7 +31,7 @@ public class IO_Ejbasicos14 {
 		
 		metros = metros * 100;
 		
-		System.out.println("Se contabilizaran : " + Math.round(metros));
+		System.out.printf("Se contabilizaran : %.0f%n", Math.floor(metros));
 		
 		sc.close();
 		

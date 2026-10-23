@@ -34,7 +34,8 @@ public class IO_Ejbasicos6 {
 		
 		System.out.println("El valor absoluto usando math es: " + Math.abs(numero));		
 		System.out.println("El valor absoluto de " + numero + " es " + absolutoSin );
-		
+		sc.close();
+
 
 
 	}
