@@ -12,7 +12,7 @@ public class Ej04 {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	 // public static void main(String[] args) {
 		// TODO: Declara un método estático que convierta euros (double) a céntimos (long) con Math.round.
 
 	    // static long eurosACentimos(double euros) { ... }

@@ -11,7 +11,7 @@ public class Ej4 {
 	/**
 	 * @param args
 	 */
-	public class ParseVsValueOf {
+	
 	    public static void main(String[] args) {
 
 	        // Datos de entrada (simulados)

@@ -23,7 +23,7 @@ public class Ej5 {
 	/**
 	 * @param args
 	 */
-	public class LimitesYConversionesWrapper {
+	
 
 
 	    public static void main(String[] args) {
