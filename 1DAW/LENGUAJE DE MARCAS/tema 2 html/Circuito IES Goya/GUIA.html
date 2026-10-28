@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Circuito IES Goya paso a paso</title></head><body>
+<h1>Circuito IES Goya paso a paso</h1>
+<p>Construiremos una página multimedia con HTML, sin CSS ni JavaScript. Trabaja en <code>mi-circuito.html</code> y utiliza <code>index.html</code> como referencia final.</p>
+<section><h2>1 Preparar la carpeta</h2>
+<p>Descomprime el ZIP y abre la carpeta Circuito IES Goya en VS Code. Los recursos ya están preparados. index.html contiene el ejemplo terminado: déjalo para comparar al final.</p>
+<p>Abre inicio.html y guarda una copia en esta misma carpeta con el nombre mi-circuito.html. Así las rutas de audio, vídeo, imágenes y documentos funcionarán sin modificarlas. Abre mi-circuito.html con Live Preview.</p>
+<pre><code>Circuito IES Goya/
+├── index.html                 Ejemplo terminado
+├── inicio.html                Plantilla para empezar
+├── mi-circuito.html           Tu página de trabajo
+├── imagenes/
+├── audio/
+├── videos/
+├── subtitulos/
+├── textos/
+└── documentos/</code></pre>
+<p>Comprueba: al principio solo se verá una página vacía y el título de la pestaña. Guarda cada cambio y recarga si no aparece.</p>
+</section>
+<section><h2>2 Construir la estructura</h2>
+<p>Sustituye el comentario dentro de body por este bloque. Mantén el resto de la plantilla. Más adelante añadiremos los apartados dentro de main.</p>
+<pre><code>&lt;header&gt;
+    &lt;img src=&quot;imagenes/logo-goya.png&quot; alt=&quot;Logotipo del IES Francisco de Goya&quot; width=&quot;150&quot;&gt;
+    &lt;h1&gt;Circuito IES Francisco de Goya&lt;/h1&gt;
+    &lt;p&gt;Molina de Segura · Una vuelta por el circuito del Goya.&lt;/p&gt;
+&lt;/header&gt;
+
+&lt;nav&gt;
+    &lt;a href=&quot;#presentacion&quot;&gt;Presentación&lt;/a&gt; |
+    &lt;a href=&quot;#circuito&quot;&gt;Nuestro circuito&lt;/a&gt; |
+    &lt;a href=&quot;#formula-1&quot;&gt;Fórmula 1&lt;/a&gt; |
+    &lt;a href=&quot;#programa&quot;&gt;Programa&lt;/a&gt; |
+    &lt;a href=&quot;#preguntas&quot;&gt;Preguntas frecuentes&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;hr&gt;
+
+&lt;main&gt;
+    &lt;!-- Añadiremos aquí las cinco secciones y el aside. --&gt;
+&lt;/main&gt;
+
+&lt;hr&gt;
+
+&lt;footer&gt;
+    &lt;p&gt;&lt;small&gt;IES Francisco de Goya · Lenguajes de Marcas.&lt;/small&gt;&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+<p>header presenta la página; nav agrupa los enlaces; main contiene el contenido principal; footer la cierra. Los enlaces del menú van directamente dentro de nav, sin CSS. Si hay poco espacio, pueden pasar a otra línea.</p>
+<p>Los dos hr separan la navegación del contenido y el contenido del pie. El menú todavía no lleva a ningún apartado: faltan sus identificadores. No crees otro main al añadir los ejemplos.</p>
+</section>
+<section><h2>3 Añadir la presentación en audio</h2>
+<p>Dentro de main, antes de su cierre, añade esta primera sección:</p>
+<pre><code>&lt;section id=&quot;presentacion&quot;&gt;
+    &lt;h2&gt;Presentación del circuito&lt;/h2&gt;
+    &lt;p&gt;Escucha la presentación antes de comenzar la vuelta.&lt;/p&gt;
+
+    &lt;!-- controls muestra los controles que proporciona el navegador. --&gt;
+    &lt;audio controls preload=&quot;metadata&quot;&gt;
+        &lt;source src=&quot;audio/presentacion.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+        Tu navegador no admite el elemento de audio.
+    &lt;/audio&gt;
+
+    &lt;p&gt;&lt;a href=&quot;audio/presentacion.mp3&quot;&gt;Abrir el audio&lt;/a&gt;&lt;/p&gt;
+
+    &lt;h3&gt;Transcripción del audio&lt;/h3&gt;
+    &lt;p&gt;Bienvenidos al circuito del IES Francisco de Goya.
+        Estamos en Molina de Segura. Vamos a recorrer su trazado.
+        Conoceremos la recta de salida, las curvas y la zona de boxes.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+<p>section agrupa el tema y h2 lo identifica. El id presentacion coincide con href=&quot;#presentacion&quot; del menú. audio incorpora el reproductor, controls muestra sus botones y source señala el archivo. type informa de su formato; preload=&quot;metadata&quot; sugiere cargar información inicial.</p>
+<p>Comprueba: pulsa Presentación en el menú, reproduce el audio y compara lo que escuchas con la transcripción. Quita controls un momento y observa la diferencia; vuelve a ponerlo. El enlace exterior permite abrir el MP3 aunque falle el reproductor.</p>
+</section>
+<section><h2>4 Incorporar el vídeo y su portada</h2>
+<p>Después de la sección del audio y todavía dentro de main, añade este bloque. Empezaremos sin la pista de subtítulos:</p>
+<pre><code>&lt;section id=&quot;circuito&quot;&gt;
+    &lt;h2&gt;Una vuelta a nuestro circuito&lt;/h2&gt;
+    &lt;p&gt;Sigue el punto rojo para localizar la recta de salida,
+        las curvas y los boxes del circuito del Goya.&lt;/p&gt;
+
+    &lt;figure&gt;
+        &lt;!-- poster pertenece a video, no a source. --&gt;
+        &lt;video controls width=&quot;640&quot; preload=&quot;metadata&quot; poster=&quot;imagenes/portada.jpg&quot;&gt;
+            &lt;source src=&quot;videos/presentacion.mp4&quot; type=&quot;video/mp4&quot;&gt;
+        &lt;/video&gt;
+        &lt;figcaption&gt;Una vuelta por el circuito del IES Francisco de Goya.&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+    &lt;p&gt;&lt;a href=&quot;videos/presentacion.mp4&quot;&gt;Abrir el vídeo&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;textos/transcripcion.txt&quot;&gt;Leer la transcripción y descripción del vídeo&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;subtitulos/presentacion-es.vtt&quot; download&gt;Descargar los subtítulos&lt;/a&gt;&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+<p>video reproduce el MP4. controls muestra el reproductor, width fija su ancho y poster señala la portada. figure reúne el vídeo y su explicación; figcaption es el pie visible.</p>
+<p>El MP4 ya contiene la narración. No necesitas iniciar el MP3 a la vez. Los reproductores son independientes y sus sonidos pueden mezclarse.</p>
+<p>Comprueba: reproduce el vídeo, activa su volumen y utiliza el enlace para abrirlo aparte. Si el panel de VS Code da problemas, abre la dirección de Live Preview en un navegador externo.</p>
+</section>
+<section><h2>5 Conectar los subtítulos</h2>
+<p>Dentro de video, después de source y antes del texto alternativo, añade track:</p>
+<pre><code>&lt;track src=&quot;subtitulos/presentacion-es.vtt&quot;
+       kind=&quot;captions&quot;
+       srclang=&quot;es&quot;
+       label=&quot;Español&quot;
+       default&gt;</code></pre>
+<p>Abre subtitulos/presentacion-es.vtt. Su contenido es:</p>
+<pre><code>WEBVTT
+
+1
+00:00:00.000 --&gt; 00:00:03.653
+Bienvenidos al circuito del IES Francisco de Goya.
+
+2
+00:00:03.653 --&gt; 00:00:08.271
+Estamos en Molina de Segura. Vamos a recorrer su trazado.
+
+3
+00:00:08.271 --&gt; 00:00:12.814
+Conoceremos la recta de salida, las curvas y la zona de boxes.</code></pre>
+<p>WEBVTT identifica el formato. Cada intervalo contiene inicio, flecha --&gt; y final; debajo aparece el texto. Una línea en blanco separa los bloques. Los números son identificadores opcionales. Se guarda como .vtt en UTF-8.</p>
+<p>kind=&quot;captions&quot; identifica diálogo y sonidos relevantes; srclang indica el idioma, label nombra la pista y default propone mostrarla inicialmente. El usuario puede seleccionarla desde los controles.</p>
+<p>Comprueba: reproduce el vídeo desde Live Preview y activa la pista Español. La transcripción de textos/transcripcion.txt permite leer el contenido completo; el VTT lo muestra sincronizado. Ninguno genera voz.</p>
+</section>
+<section><h2>6 Incrustar el vídeo de YouTube</h2>
+<p>Añade la sección siguiente después de la del circuito:</p>
+<pre><code>&lt;section id=&quot;formula-1&quot;&gt;
+    &lt;h2&gt;Conoce la Fórmula 1&lt;/h2&gt;
+    &lt;p&gt;Un vídeo de Fórmula 1 para inspirarnos antes de entrar en pista.&lt;/p&gt;
+
+    &lt;!-- iframe carga el reproductor externo; no es un archivo MP4. --&gt;
+    &lt;iframe src=&quot;https://www.youtube.com/embed/9RrpeaMWhWY&quot; title=&quot;Vídeo de Fórmula 1&quot; width=&quot;640&quot; height=&quot;360&quot;
+        loading=&quot;lazy&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allow=&quot;fullscreen; picture-in-picture&quot;
+        allowfullscreen&gt;
+    &lt;/iframe&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=9RrpeaMWhWY&quot;&gt;Ver el vídeo en YouTube&lt;/a&gt;&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+<p>iframe carga la página del reproductor de YouTube. title describe su contenido; width y height reservan su tamaño. loading=&quot;lazy&quot; permite aplazar su carga. Conservamos la política de referencia y los permisos del reproductor.</p>
+<p>Comprueba: con conexión a Internet, pulsa reproducir. Si la inserción está bloqueada, prueba el enlace exterior. La dirección de src utiliza youtube.com/embed/; un enlace youtu.be no es la dirección de inserción. Los subtítulos de YouTube se gestionan desde su reproductor, sin añadir track al iframe.</p>
+</section>
+<section><h2>7 Mostrar el programa en PDF</h2>
+<p>Añade otra sección dentro de main:</p>
+<pre><code>&lt;section id=&quot;programa&quot;&gt;
+    &lt;h2&gt;Programa del circuito&lt;/h2&gt;
+    &lt;p&gt;Consulta los horarios y las normas de la visita.&lt;/p&gt;
+
+    &lt;!-- object incorpora el PDF; el contenido interior es una alternativa. --&gt;
+    &lt;object data=&quot;documentos/programa-circuito.pdf&quot;
+            type=&quot;application/pdf&quot; width=&quot;640&quot; height=&quot;450&quot;&gt;
+        &lt;p&gt;No se puede mostrar el PDF.
+            &lt;a href=&quot;documentos/programa-circuito.pdf&quot;&gt;Abrir el programa&lt;/a&gt;.&lt;/p&gt;
+    &lt;/object&gt;
+
+    &lt;p&gt;&lt;a href=&quot;documentos/programa-circuito.pdf&quot;&gt;Abrir el programa en PDF&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;documentos/programa-circuito.pdf&quot; download&gt;Descargar el programa&lt;/a&gt;&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+<p>object incorpora el documento. data es la ruta, type indica PDF y las dimensiones corresponden al visor. El contenido entre las etiquetas ofrece una alternativa si el recurso no se puede representar.</p>
+<p>Los enlaces fuera de object están siempre disponibles. Sin download se solicita abrir el archivo; con download se solicita descargarlo.</p>
+<p>Comprueba: consulta el programa dentro de la página, ábrelo aparte y descárgalo. El comportamiento del visor depende del navegador. El archivo ya está incluido en documentos/programa-circuito.pdf.</p>
+</section>
+<section><h2>8 Crear las preguntas frecuentes</h2>
+<p>Añade esta sección después del programa:</p>
+<pre><code>&lt;section id=&quot;preguntas&quot;&gt;
+    &lt;h2&gt;Preguntas frecuentes&lt;/h2&gt;
+
+    &lt;details&gt;
+        &lt;summary&gt;¿Hay que reservar?&lt;/summary&gt;
+        &lt;p&gt;Sí, las plazas son limitadas. Consulta la disponibilidad antes de venir.&lt;/p&gt;
+    &lt;/details&gt;
+
+    &lt;!-- open establece el estado inicial; el usuario puede cerrar la respuesta. --&gt;
+    &lt;details open&gt;
+        &lt;summary&gt;¿Puedo llevar el móvil al circuito?&lt;/summary&gt;
+        &lt;p&gt;No está permitido introducir teléfonos móviles en el circuito,
+            ni siquiera para consultar los tiempos de vuelta.&lt;/p&gt;
+    &lt;/details&gt;
+
+    &lt;details&gt;
+        &lt;summary&gt;¿Necesito conocer la Fórmula 1 para participar?&lt;/summary&gt;
+        &lt;p&gt;No. Puedes empezar con el vídeo y preguntar tus dudas durante la presentación.&lt;/p&gt;
+    &lt;/details&gt;
+
+    &lt;details&gt;
+        &lt;summary&gt;¿Dónde está el circuito?&lt;/summary&gt;
+        &lt;p&gt;En nuestra web del IES Francisco de Goya, en Molina de Segura.
+            ¡Entra en el vídeo y comienza la vuelta!&lt;/p&gt;
+    &lt;/details&gt;
+&lt;/section&gt;</code></pre>
+<p>details agrupa cada desplegable y summary es el texto que se pulsa para abrirlo. La pregunta de los móviles incluye open: empieza abierta, pero se puede cerrar. No queda fija.</p>
+<p>Comprueba: abre las preguntas con el ratón y después con Tab y Enter o Espacio. Retira open de la norma de los móviles, recarga y observa el cambio. open=&quot;false&quot; también activa el estado abierto; para desactivarlo se retira el atributo.</p>
+</section>
+<section><h2>9 Añadir los recursos de consulta</h2>
+<p>Antes del cierre de main y después de las cinco secciones, incorpora el aside:</p>
+<pre><code>&lt;aside&gt;
+    &lt;h2&gt;Para ampliar&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://www.formula1.com/&quot;&gt;Web oficial de Fórmula 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;https://marcas.cgarcher.dev/docs/unidades/02/contenidos/multimedia-interaccion/&quot;&gt;Apuntes de
+                contenido incrustado y multimedia&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/aside&gt;</code></pre>
+<p>aside contiene información complementaria: el contenido de la página se entiende sin esos enlaces. Su función no obliga a colocarlo en una columna lateral. Aquí se verá debajo.</p>
+</section>
+<section><h2>10 Probar y comparar</h2>
+<p>Guarda mi-circuito.html y compáralo con index.html. Las diferencias de espacios o saltos del archivo no son un problema si el contenido y el anidamiento son correctos.</p>
+<ul><li>Prueba los cinco enlaces del menú. Cada href con # debe coincidir con un id único.</li><li>Reproduce audio y vídeo por separado; comprueba sonido, portada y subtítulos.</li><li>Abre y descarga el PDF.</li><li>Comprueba que la pregunta de los móviles comienza abierta.</li><li>Recorre los enlaces y preguntas con el teclado.</li><li>Valida el documento completo con Nu HTML Checker: https://validator.w3.org/nu/#textarea.</li></ul>
+<p>Si quieres seguir experimentando, añade muted al vídeo y reprodúcelo; después retíralo. Prueba loop y avanza hasta el final. Cambia poster por una imagen de la carpeta. Modifica solo un atributo cada vez y restaura el ejemplo al terminar.</p>
+<p>source ofrece alternativas del mismo contenido, no una lista de reproducción. controls, muted, loop y open son atributos booleanos. Las instrucciones de dibujo y los diálogos programados quedan para otra práctica.</p>
+</section>
+</body></html>

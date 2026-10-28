@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circuito IES Francisco de Goya</title>
+</head>
+
+<body>
+    <header>
+        <img src="imagenes/logo-goya.png" alt="Logotipo del IES Francisco de Goya" width="150">
+        <h1>Circuito IES Francisco de Goya</h1>
+        <p>Molina de Segura · Una vuelta por el circuito del Goya.</p>
+    </header>
+
+    <nav>
+        <a href="#presentacion">Presentación</a> |
+        <a href="#circuito">Nuestro circuito</a> |
+        <a href="#formula-1">Fórmula 1</a> |
+        <a href="#programa">Programa</a> |
+        <a href="#preguntas">Preguntas frecuentes</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section id="presentacion">
+            <h2>Presentación del circuito</h2>
+            <p>Escucha la presentación antes de comenzar la vuelta.</p>
+
+            <!-- controls muestra los controles que proporciona el navegador. -->
+            <audio controls preload="metadata">
+                <source src="audio/presentacion.mp3" type="audio/mpeg">
+                Tu navegador no admite el elemento de audio.
+            </audio>
+
+            <p><a href="audio/presentacion.mp3">Abrir el audio</a></p>
+
+            <h3>Transcripción del audio</h3>
+            <p>Bienvenidos al circuito del IES Francisco de Goya.
+                Estamos en Molina de Segura. Vamos a recorrer su trazado.
+                Conoceremos la recta de salida, las curvas y la zona de boxes.</p>
+        </section>
+
+        <section id="circuito">
+            <h2>Una vuelta a nuestro circuito</h2>
+            <p>Sigue el punto rojo para localizar la recta de salida,
+                las curvas y los boxes del circuito del Goya.</p>
+
+            <figure>
+                <!-- poster pertenece a video, no a source. -->
+                <video controls width="640" preload="metadata" poster="imagenes/portada.jpg">
+                    <source src="videos/presentacion.mp4" type="video/mp4">
+                    <!-- track enlaza texto sincronizado en formato WebVTT. -->
+                    <track src="subtitulos/presentacion-es.vtt" kind="captions" srclang="es" label="Español" default>
+                </video>
+                <figcaption>Una vuelta por el circuito del IES Francisco de Goya.</figcaption>
+            </figure>
+
+            <p><a href="videos/presentacion.mp4">Abrir el vídeo</a></p>
+            <p><a href="textos/transcripcion.txt">Leer la transcripción y descripción del vídeo</a></p>
+            <p><a href="subtitulos/presentacion-es.vtt" download>Descargar los subtítulos</a></p>
+        </section>
+
+        <section id="formula-1">
+            <h2>Conoce la Fórmula 1</h2>
+            <p>Un vídeo de Fórmula 1 para inspirarnos antes de entrar en pista.</p>
+
+            <!-- iframe carga el reproductor externo; no es un archivo MP4. -->
+            <iframe src="https://www.youtube.com/embed/9RrpeaMWhWY" title="Vídeo de Fórmula 1" width="640" height="360"
+                loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="fullscreen; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <p><a href="https://www.youtube.com/watch?v=9RrpeaMWhWY">Ver el vídeo en YouTube</a></p>
+        </section>
+
+        <section id="programa">
+            <h2>Programa del circuito</h2>
+            <p>Consulta los horarios y las normas de la visita.</p>
+
+            <!-- object incorpora el PDF; el contenido interior es una alternativa. -->
+            <object data="documentos/programa-circuito.pdf"
+                    type="application/pdf" width="640" height="450">
+                <p>No se puede mostrar el PDF.
+                    <a href="documentos/programa-circuito.pdf">Abrir el programa</a>.</p>
+            </object>
+
+            <p><a href="documentos/programa-circuito.pdf">Abrir el programa en PDF</a></p>
+            <p><a href="documentos/programa-circuito.pdf" download>Descargar el programa</a></p>
+        </section>
+
+        <section id="preguntas">
+            <h2>Preguntas frecuentes</h2>
+
+            <details>
+                <summary>¿Hay que reservar?</summary>
+                <p>Sí, las plazas son limitadas. Consulta la disponibilidad antes de venir.</p>
+            </details>
+
+            <!-- open establece el estado inicial; el usuario puede cerrar la respuesta. -->
+            <details open>
+                <summary>¿Puedo llevar el móvil al circuito?</summary>
+                <p>No está permitido introducir teléfonos móviles en el circuito,
+                    ni siquiera para consultar los tiempos de vuelta.</p>
+            </details>
+
+            <details>
+                <summary>¿Necesito conocer la Fórmula 1 para participar?</summary>
+                <p>No. Puedes empezar con el vídeo y preguntar tus dudas durante la presentación.</p>
+            </details>
+
+            <details>
+                <summary>¿Dónde está el circuito?</summary>
+                <p>En nuestra web del IES Francisco de Goya, en Molina de Segura.
+                    ¡Entra en el vídeo y comienza la vuelta!</p>
+            </details>
+        </section>
+
+        <aside>
+            <h2>Para ampliar</h2>
+            <ul>
+                <li><a href="https://www.formula1.com/">Web oficial de Fórmula 1</a></li>
+                <li><a href="https://marcas.cgarcher.dev/docs/unidades/02/contenidos/multimedia-interaccion/">Apuntes de
+                        contenido incrustado y multimedia</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p><small>IES Francisco de Goya · Lenguajes de Marcas.</small></p>
+    </footer>
+</body>
+
+</html>
