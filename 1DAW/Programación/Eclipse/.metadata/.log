@@ -10174,3 +10174,225 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY com.codetogether.hq.eclipse 1 0 2026-10-26 00:21:37.820
 !MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+!SESSION 2026-10-29 15:34:06.613 -----------------------------------------------
+eclipse.buildId=4.41.0.20260903-0719
+java.version=25.0.4.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-10-29 15:35:19.681
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-10-29 15:35:47.557
+!MESSAGE Logback config file: E:\Clases\1DAW\Programación\Eclipse\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.201.20260831-2044.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-10-29 15:36:02.787
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 15:36:06.459
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 15:41:06.751
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 15:46:07.011
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 15:51:07.247
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 15:56:07.433
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 16:01:07.602
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 16:06:07.839
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 16:11:08.021
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 16:16:08.190
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 16:21:08.375
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 16:26:08.542
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 16:31:08.702
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY org.eclipse.jdt.ui 4 0 2026-10-29 16:32:39.226
+!MESSAGE AbortCompilation computing hover information in ej02.java at offset 755
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: 
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11585)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11975)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11916)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:10308)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.parse(CompilationUnitResolver.java:656)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:1441)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver$ECJCompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:109)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateASTCached(ASTParser.java:1412)
+	at org.eclipse.jdt.core.dom.ASTParser.lambda$1(ASTParser.java:1291)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5772)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1291)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:933)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.createAST(CoreJavadocContentAccessUtility.java:350)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.getJavadocNode(CoreJavadocContentAccessUtility.java:318)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.javadoc2HTML(CoreJavadocAccess.java:423)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContentFromSource(CoreJavadocAccess.java:372)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContent(CoreJavadocAccess.java:229)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:49)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:802)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:720)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:705)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+	Suppressed: java.lang.Throwable: Source line 29 :
+-----
+		Scanner sc = new Scanner(System.in); // ESTO SE PONE SOLO 1 VEZ
+		System.out.println("Dame un número entero porfa: ");
+		int num1 = sc.nextInt();
+		sc.nextLine(); // limpiar buffer
+		System.out.println("Dame otro número entero porfa: ");
+		int num2 = sc.nextInt();
+		sc.nextLine(); // limpiar buffer
+		
+		// != NO IGUAL
+		if	(num1 != num2) {
+			System.out.|println(true);
+-----
+		at org.eclipse.jdt.internal.ui.util.SelectionUtil.logException(SelectionUtil.java:157)
+		at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:178)
+		... 3 more
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 16:36:08.940
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 16:41:09.113
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 16:46:09.305
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 16:51:09.469
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 16:56:09.654
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 17:01:09.815
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 17:06:09.976
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 17:11:10.132
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 17:16:10.302
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 17:21:10.456
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 17:26:10.657
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 17:31:10.818
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 17:36:11.058
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 17:41:11.246
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 17:46:11.527
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 17:51:11.685
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 17:56:13.855
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 18:01:14.069
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 18:06:14.231
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 18:11:14.426
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 18:16:14.651
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 18:21:14.833
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 18:26:14.988
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 18:31:15.159
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 18:36:15.389
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 18:41:15.557
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 18:46:15.772
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 18:51:15.947
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 18:56:16.120
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 19:01:16.273
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 19:06:16.437
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 19:11:16.639
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 19:16:16.807
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2026-10-29 19:21:16.974
+!MESSAGE Phone home failed due to the following issue: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+
+!ENTRY org.eclipse.eclemma.core 4 5013 2026-10-29 19:22:20.043
+!MESSAGE Error while dumping coverage data (code 5013).
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:316)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:354)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:798)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:974)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:964)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:289)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:308)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:71)
+	at org.jacoco.core.data.ExecutionDataReader.read(ExecutionDataReader.java:84)
+	at org.eclipse.eclemma.internal.core.MemoryExecutionDataSource.readFrom(MemoryExecutionDataSource.java:69)
+	at org.eclipse.eclemma.internal.core.launching.AgentServer.run(AgentServer.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
