@@ -1,5 +1,6 @@
 /**
- * Pedir tres números y mostrarlos ordenados de mayor a menor. (Utilizar el operador ternario)
+ * Pedir tres números y mostrarlos ordenados de mayor a menor. 
+ * (Utilizar el operador ternario)
  */
 package control.condicionales.ejercicios;
 import java.util.Scanner;
