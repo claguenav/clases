@@ -1,0 +1,23 @@
+CREATE DATABASE UT3_Ejemplos;
+USE UT3_Ejemplos;
+
+-- crear tabla
+-- NOT NULL para que el campo sea OBLIGATORIO
+-- COMA EN TODOS LOS CAMPOS 
+-- El ultimo campo NO LLEVA coma
+CREATE TABLE alumnos(
+	NRE MEDIUMINT UNSIGNED NOT NULL PRIMARY KEY, -- ESTO LUEGO NO SE HACE ASI, LO HACEMOS ASI AL SER LA PRIMERA TABLA
+    DNI VARCHAR(10),
+    nombre VARCHAR(30) NOT NULL,
+	apellido1 VARCHAR (30) NOT NULL,
+    apellido2 VARCHAR (30), 
+    NOTA DECIMAL(4,2)
+);
+
+
+CREATE TABLE asignaturas(
+	codeAsig VARCHAR(5) NOT NULL PRIMARY KEY,
+    denominacion VARCHAR(50) NOT NULL,
+    numHoras TINYINT,
+    curso TINYINT
+);
