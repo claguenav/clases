@@ -5,16 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ejercicio 2. Resumen y contraseña</title>
 </head>
+
 <body>
 
   <h1>Resumen y contraseña</h1>
   <form action="/" method="get">
 
-     <p>
+    <p>
       <label for="noviembre">Nombre del libros</label>
     </p>
     <p>
-      <input id="nombre" name="nombre" type="text" required>
+      <input id="nombre" name="nombre" type="text" maxlength="40" required>
+    </p>
+    <p> <label for="comentario">Comentario: </label>
+      <br>
+      <textarea name="comentario" maxlength="200" rows="5" cols="40" placeholder="Escribe un breve resumen del libro."></textarea>
+    </p>
+    <p>
+      <label for="contraseña">Contraseña</label>
+      <input type="password" minlength="8" autocomplete="new-password" required>
+
+    </p>
+    <p>
+      <button type="submit">Enviar</button>
+      <button type="reset">Restaurar</button>
     </p>
 
 
