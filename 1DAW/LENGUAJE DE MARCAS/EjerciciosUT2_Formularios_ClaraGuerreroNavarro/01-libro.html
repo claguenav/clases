@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 1. Datos de un libro</title>
+</head>
+<body>
+
+  <h1>Datos de un libro</h1>
+
+  <form action="/libros" method="get">
+    <p>
+      <label for="titulo">Titulo del libro</label>
+    </p>
+    <p>
+      <input id="titulo" name="titulo" type="text" required>
+    </p>
+     <p>
+      <label for="ano">Año de publicación</label>
+    </p>
+    <p>
+      <input id="ano" name="ano" type="number" minlength="1900" maxlength="2026">
+    </p>
+     <p>
+      <label for="titulo">Correo de contacto</label>
+    </p>
+    <p>
+      <input id="email" name="titulo" type="email" required>
+    </p>
+    <p>
+      <button type="submit">Enviar</button>
+    </p>
+  </form>
+
+
+</body>
+</html>

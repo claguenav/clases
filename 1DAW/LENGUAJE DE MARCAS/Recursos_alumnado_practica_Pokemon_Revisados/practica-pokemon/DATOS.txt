@@ -1,0 +1,34 @@
+Centro de entrenamiento Pokémon
+
+Presentación
+El Centro de entrenamiento Pokémon del IES Francisco de Goya organiza una jornada para conocer a los Pokémon y practicar con ellos. Hay actividades de iniciación, cuidados y recorrido por el circuito.
+
+Fichas
+Autoría de las fichas: Equipo de entrenadores del centro.
+- Pikachu. Tipo: eléctrico. Entrenamiento de velocidad y coordinación.
+- Charmander. Tipo: fuego. Entrenamiento de control y precisión.
+- Squirtle. Tipo: agua. Entrenamiento de resistencia y trabajo en equipo.
+
+Recomendaciones
+Trae agua, calzado cómodo y tu cuaderno. Sigue las indicaciones del responsable de cada actividad.
+
+Pasos para participar
+Revisar las actividades. Completar la inscripción. Confirmar los datos.
+
+Material necesario
+Mochila. Agua. Cuaderno.
+
+Horario
+  Hora   Actividad   Zona  
+  09:00   Presentación del centro   Aula 1  
+  09:30   Circuito de entrenamiento   Pista  
+  10:15   Inscripción de entrenadores   Aula 2  
+
+Pregunta frecuente
+¿Puedo participar sin experiencia? Sí, las actividades incluyen un nivel de iniciación.
+
+Contacto
+Correo: centro.pokemon@example.org. Pie: © 2026 IES Francisco de Goya.
+
+Recursos
+El vídeo y su portada muestran el circuito de entrenamiento del IES. Las imágenes de los Pokémon están en la subcarpeta pokemon. Puedes copiar los textos y modificar su redacción manteniendo la información.
