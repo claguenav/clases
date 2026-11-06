@@ -22,43 +22,54 @@ public class ej09 {
 	 */
 	public static void main(String[] args) {
 		double resultado1 = 0.0;
-		double resultado2 = 0.0;
-		
-		String mensajeresultado;
-		
-		Scanner sc = new Scanner(System.in);
-		//
-		System.out.println("primer coeficiente:");
-		int coef1 = sc.nextInt();
-		sc.nextLine();
-		System.out.println("segundo coeficiente:");
-		int coef2 = sc.nextInt();
-		sc.nextLine();
-		System.out.println("tercer coeficiente:");
-		int coef3 = sc.nextInt();
-		sc.nextLine();
-		//
-		
-		// 1º calculo = b^2 - 4*a*c
-		double determinante = (Math.pow(coef2, 2) - 4*coef1*coef3);
-		double raiz = 0;
-		double equis = 0;
-		// el determinante solo se tiene en cuenta si es positivo
-		if (determinante > 0 && coef1 > 0) {
-			 raiz = Math.sqrt(determinante);
-			 resultado1 = (-coef2 + raiz)/2*coef2;
-			 resultado2 = (-coef2 - raiz)/2*coef2;
-			 System.out.println("La ecuación tiene dos soluciones reales: ");
-			 System.out.println("Primer resultado = " + resultado1);
-			 System.out.println("Segundo resultado = " + resultado2);
+        double resultado2 = 0.0;
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("primer coeficiente (a):");
+        int coef1 = sc.nextInt();
+        sc.nextLine();
+        
+        System.out.println("segundo coeficiente (b):");
+        int coef2 = sc.nextInt();
+        sc.nextLine();
+        
+        System.out.println("tercer coeficiente (c):");
+        int coef3 = sc.nextInt();
+        sc.nextLine();
+        
+        // Validación: 'a' no puede ser 0
+        if (coef1 == 0) {
+            System.out.println("El primer coeficiente no puede ser 0 (no es una ecuación de segundo grado).");
+            sc.close();
+            return;
+        }
+        
+        // 1º cálculo = b^2 - 4*a*c
+        double determinante = Math.pow(coef2, 2) - 4 * coef1 * coef3;
+        
+        // El determinante debe ser mayor o igual a 0 para tener soluciones reales
+        if (determinante >= 0) {
+             double raiz = Math.sqrt(determinante);
+             
+             // Corrección del denominador: agrupado entre paréntesis y usando coef1 (a)
+             resultado1 = (-coef2 + raiz) / (2.0 * coef1);
+             resultado2 = (-coef2 - raiz) / (2.0 * coef1);
+             
+             if (determinante == 0) {
+                 System.out.println("La ecuación tiene una única solución real: ");
+                 System.out.println("Resultado = " + resultado1);
+             } else {
+                 System.out.println("La ecuación tiene dos soluciones reales: ");
+                 System.out.println("Primer resultado = " + resultado1);
+                 System.out.println("Segundo resultado = " + resultado2);
+             }
 
-		} else  {
-			
-			mensajeresultado = "No existen soluciones reales para el determinante";
-			System.out.println(mensajeresultado);
-		}
-		//
-		sc.close();
+        } else  {
+            System.out.println("No existen soluciones reales para el determinante.");
+        }
+        
+        sc.close();
 		
 	}
 

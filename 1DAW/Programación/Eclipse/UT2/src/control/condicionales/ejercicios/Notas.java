@@ -1,5 +1,7 @@
 /**
- * 
+ * Desarrollad una aplicación Java que permita al usuario seleccionar entre el sistema de calificaciones español (0–10) y el estadounidense (0–100), introduciendo una nota para obtener su calificación correspondiente, para ello mostrar un menú para elegir entre España (1) y Estados Unidos (2). 
+
+   Solicitar una calificación numérica según el sistema seleccionado. Se debe redondear la calificación a dos decimales. Se deben incluir comentarios que expliquen las condiciones, el flujo de ejecución y las decisiones de programación.
  */
 package control.condicionales.ejercicios;
 import java.util.Scanner;
