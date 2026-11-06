@@ -36,7 +36,7 @@ public class ej08 {
 		System.out.println();
 		
 		sc.close();
-		
+		           
 	}
 
 }
