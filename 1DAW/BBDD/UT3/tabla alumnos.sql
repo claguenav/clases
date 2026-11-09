@@ -53,3 +53,32 @@ INSERT INTO matriculas VALUES (1112,'BBDD',5);
 
 SELECT * 
 FROM matriculas;
+
+-- EJEMPLO 2 EMPLEADO-DEPARTAMENTO
+
+CREATE TABLE departamentos(
+	codDpto VARCHAR(6) NOT NULL,
+	denoDpto VARCHAR(50) NOT NULL,
+	area VARCHAR(50),
+	presupuesto DECIMAL (10,2),
+	CONSTRAINT PK_dptos PRIMARY KEY (codDpto)
+);
+
+CREATE TABLE empleados (
+	codEmple SMALLINT UNSIGNED NOT NULL,
+	nomApel VARCHAR(50) NOT NULL,
+	puesto VARCHAR (40),
+	fechaAlta DATE,
+	salario DECIMAL(8,2), -- 8 indica el total de digitos y el 2 el numero de decimales
+	idDpto VARCHAR(6),
+	CONSTRAINT PK_emple PRIMARY KEY (codEmple),
+	CONSTRAINT PK_emple_dptos FOREIGN KEY (idDpto) REFERENCES departamentos(codDpto)
+    );
+    
+    INSERT INTO departamentos VALUES ('CONTA','Contabilidad','Finanzas',1000000);
+	INSERT INTO departamentos VALUES ('MARK','Marketing','Ventas',1000000);
+    INSERT INTO departamentos (codDpto,denoDpto) VALUES ('INFOR','Informatica y comunicaciones');
+    
+   asignaturas SELECT * 
+   FROM departamentos;
+);
