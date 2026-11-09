@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 8. Seleccionar archivos</title>
+</head>
+
+<body>
+  <h1>Seleccionar archivos</h1>
+  <form action="/subir" method="post" enctype="multipart/form-data">
+    <p>
+      <label for="portada">Portada del libro</label><br>
+      <input type="file" id="portada" name="portada" accept="image/*">
+    </p>
+    <p>
+      <label for="varias">Varias imágenes</label><br>
+      <input type="file" id="varias" name="varias" multiple accept="image/*">
+    </p>
+    <p>
+      <button type="submit" disabled>Subir archivos (necesita servidor)</button>
+    </p>
+
+  </form>
+
+</body>
+</html>

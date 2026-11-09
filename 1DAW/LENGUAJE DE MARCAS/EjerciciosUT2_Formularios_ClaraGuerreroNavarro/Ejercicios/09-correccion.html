@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 9. Corregir un formulario</title>
+</head>
+
+<body>
+
+  <h1>Corregir un formulario</h1>
+
+  <form action="09-correccion.html" method="get">
+
+
+    <p>
+      <label for="nombre">Nombre</label><br>
+      <input type="text" id="nombre" name="nombre">
+    </p>
+
+
+    <fieldset>
+      <legend>Turno</legend>
+      <label>
+        <input type="radio" name="turno" value="manana"> Mañana
+      </label>
+      <label>
+        <input type="radio" name="turno" value="tarde"> Tarde
+      </label>
+    </fieldset>
+
+
+    <p>
+      <label>
+        <input type="checkbox" name="avisos"> Avisos
+      </label>
+    </p>
+
+
+    <p>
+      <label for="fecha">Fecha</label><br>
+      <input type="date" id="fecha" name="fecha" value="2026-11-03">
+    </p>
+
+    <p>
+      <label for="edad">Edad</label><br>
+      <input type="number" id="edad" name="edad" min="1" max="120">
+    </p>
+
+    <p>
+      <button type="submit">Enviar</button>
+    </p>
+
+  </form>
+
+</body>
+</html>

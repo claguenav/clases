@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio4. Opciones dispoibles y sugerencias</title>
+</head>
+
+<body>
+  <h1>Opciones dispoibles y sugerencias</h1>
+
+  <form method="get">
+    <p>
+      <label for="poblacion">Población</label>
+    </p>
+    <select name="poblacion" id="poblacion" required>
+      <option selected> Elige una población</option>
+      <option value="1">Archena</option>
+      <option value="2">Molina de Segura </option>
+      <option value="3">Lorquí</option>
+      <option value="4">Murcia</option>
+    </select>
+
+    <p>
+      Población con sugerencias:
+    </p>
+    <input type="text" name="favorito" list="poblacion">
+
+    <p>
+      <datalist id="poblaciones">
+        <option value="Archena"></option>
+        <option value="Molina de Segura"></option>
+        <option value="Lorquí"></option>
+        <option value="Murcia"></option>
+      </datalist>
+    </p>
+
+    <p>
+      <label for="visita">Actividad</label>
+    </p>
+    <select id="visita" name="actividad" multiple>
+      <optgroup label="Visitas">
+        <option value="Biblioteca">Biblioteca</option>
+        <option value="archivo">Archivo</option>
+      </optgroup>
+      <optgroup label="Talleres">
+        <option value="lectura">Lectura</option>
+        <option value="escritura">Escritura</option>
+      </optgroup>
+    </select>
+    <p>
+      <input type="submit" value="Enviar">
+    </p>
+  </form>
+
+</body>
+</html>

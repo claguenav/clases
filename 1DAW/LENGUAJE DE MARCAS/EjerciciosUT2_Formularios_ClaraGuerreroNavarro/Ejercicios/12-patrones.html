@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 12. Patrones y pruebas de validación</title>
+</head>
+<body>
+  <h1>Patrones y pruebas de validación</h1>
+
+  <form action="" method="get">
+        <p>
+      <label for="pin">PIN: cuatro cifras</label><br>
+      <input type="text" id="pin" name="pin"
+             inputmode="numeric"
+             pattern="[0-9]{4}"
+             required>
+    </p>
+    <p>
+      <label for="reserva">Reserva: GOYA- seguido de tres cifras</label><br>
+      <input type="text" id="reserva" name="reserva"
+             pattern="GOYA-[0-9]{3}"
+             required>
+      <br>
+      <small>Formato obligatorio: GOYA- seguido de exactamente 3 dígitos (ej. GOYA-001).</small>
+    </p>
+    <p>
+      <label for="usuario">Usuario (opcional): de 3 a 12 letras de A a Z o cifras</label><br>
+      <input type="text" id="usuario" name="usuario"
+             pattern="[A-Za-z0-9]{3,12}">
+      <br>
+      <small>Opcional. Entre 3 y 12 caracteres (letras sin tildes o números).</small>
+    </p>
+    <p>
+      <label for="comentario">Comentario: de 10 a 80 caracteres</label><br>
+      <textarea id="comentario" name="comentario"
+                minlength="10" maxlength="80"
+                rows="4" required></textarea>
+    </p>
+    <p>
+      <button type="submit">Comprobar</button>
+    </p>
+
+  </form>
+</body>
+</html>

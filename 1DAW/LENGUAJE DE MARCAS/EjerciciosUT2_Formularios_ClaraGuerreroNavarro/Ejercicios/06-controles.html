@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 6. Fechas, intervalos y colores</title>
+</head>
+
+<body>
+  <h1>Fechas intervalos y colores</h1>
+  <form action="" method="get">
+    <p>
+      <label for="fvisita">Fecha de visita</label>
+    </p>
+    <input type="date">
+    <p>
+      <label for="hora">Hora</label>
+    </p>
+    <input type="time">
+    <p>
+      <label for="web">Web personal (opcional)</label>
+    </p>
+    <input type="url" placeholder="https://ejemplo.org">
+    <p>
+      <label for="tlf">Teléfono</label>
+    </p>
+    <input type="tel" placeholder="+34 640 000 000">
+    <p>
+      <label for="valoracion">Valoración de la actividad de 0 a 10</label>
+    </p>
+
+    <input type="range" name="rango" min="0" max="10">
+
+    <p>
+      <label for="Color">Color</label>
+    </p>
+    <input type="color" name="color" value="#ff0000">
+    <p>
+      <label for="mes">Mes</label>
+    </p>
+    <input type="month">
+    <p>
+      <label for="semana">Semana</label>
+    </p>
+    <input type="week">
+    <p>
+      <label for="cita">Cita (sin zona horaria)</label>
+    </p>
+    <input type="datetime-local">
+    <p>
+      <label for="asis">Asistentes: de 2 a 10, de dos en dos</label>
+    </p>
+    <input type="number" id="asistentes" name="asistentes" min="2" max="10" step="2">
+    <p>
+      <button type="submit" inpu>Enviar</button>
+    </p>
+
+  </form>
+</body>
+</html>

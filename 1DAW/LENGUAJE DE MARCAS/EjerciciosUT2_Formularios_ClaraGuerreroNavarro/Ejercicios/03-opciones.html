@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 3. Casillas y botones de opcion</title>
+</head>
+
+<body>
+  <h1>Casillas y botones de opción</h1>
+  <form method="get">
+    <fieldset>
+      <legend>Aficiones</legend>
+      <p>
+        <label>
+          <input type="checkbox" name="aficiones" value="deporte"> Deporte
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="aficiones" value="lectura" checked> Lectura
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="aficiones" value="cine"> Cine
+        </label>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Tipo de pasta</legend>
+      <p>
+        <label>
+          <input type="radio" name="pasta" value="suave"> Suave
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="radio" name="pasta" value="dura"> Dura
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="radio" name="pasta" value="dente"> Al dente
+        </label>
+      </p>
+    </fieldset>
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>

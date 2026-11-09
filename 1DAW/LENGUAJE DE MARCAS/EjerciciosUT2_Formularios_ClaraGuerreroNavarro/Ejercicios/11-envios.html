@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 11. Consultar y enviar con httpbin</title>
+</head>
+<body>
+  <h1>Consultar y enviar con httpbin</h1>
+  <section>
+    <h2>Consultar libros con GET</h2>
+    <form action="https://httpbin.org/get" method="get">
+      <p>
+        <label for="busqueda">Buscar un libro</label><br>
+        <input type="search" id="busqueda" name="q">
+      </p>
+      <p>
+        <button type="submit">Consultar</button>
+      </p>
+    </form>
+  </section>
+  <hr>
+  <section>
+    <h2>Enviar datos con POST</h2>
+    <form action="https://httpbin.org/post" method="post">
+      <p>
+        <label for="nombre-ejemplo">Nombre de ejemplo</label><br>
+        <input type="text" id="nombre-ejemplo" name="nombre" autocomplete="name" required>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="avisos" value="si"> Recibir avisos
+        </label>
+      </p>
+      <p>
+        <button type="submit">Probar envío POST</button>
+      </p>
+    </form>
+  </section>
+  <p><small>httpbin es una herramienta de pruebas para desarrolladores. Usa datos inventados.</small></p>
+</body>
+</html>
