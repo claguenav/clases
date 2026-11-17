@@ -1,0 +1,31 @@
+p {
+    color:darkblue;
+}
+p.aviso {
+    background-color: yellow;
+}
+#horario{
+    border: 2px solid steelblue;
+}
+
+nav a{
+    font-weight: bold ;
+}
+
+input[type="text"]{
+    background-color:aqua;
+}
+/*style*/
+#titulo-centro { color: navy; }
+.titulo { color: darkgreen; }
+h1 { color: darkred; }
+
+ * { outline: 1px solid tomato; }
+
+ #horario h2 + p {
+    text-decoration: underline
+}
+
+h1, h2 {
+    letter-spacing: 5px;
+}
