@@ -1,0 +1,21 @@
+# IDEs y Editores (Eclipse, VS Code, etc.)
+.metadata/
+.settings/
+.classpath
+.project
+.vscode/
+*.iml
+
+# Compilación y binarios
+bin/
+build/
+out/
+target/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+# Archivos de sistema de Windows y macOS
+desktop.ini
+Thumbs.DB
+.DS_Store
